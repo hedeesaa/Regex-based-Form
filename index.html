@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form Styling</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="form-wrap">
+        <h1>Sign Up</h1>
+        <p>It's free and only takes a minute</p>
+        <form id="form">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" />
+            <div id="user-msg" class="invalid-msg">
+              Username should be at least 8 character
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" />
+            <div id="email-msg" class="invalid-msg">
+              Enter Valid Email
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" name="phone" id="phone" />
+            <div id="phone-msg" class="invalid-msg">
+              Enter Valid PhoneNumber
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+            <div id="pass-msg" class="invalid-msg">
+              Password should be at least 8 Character
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="password2">Confirm Password</label>
+            <input type="password" name="pasword2" id="password2" />
+            <div id="pass2-msg" class="invalid-msg">
+              Passwords are not the same
+            </div>
+          </div>
+
+          <button type="submit" class="btn">Sign Up</button>
+
+          <p class="bottom-text">
+            By clicking the Sign Up button, you agree to our
+            <a href="#">Terms & Conditions</a> and
+            <a href="#">Privacy Policy</a>
+          </p>
+        </form>
+      </div>
+      <footer>
+        <p>Already have an account? <a href="#">Login Here</a></p>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
